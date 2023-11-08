@@ -38,15 +38,15 @@ Instructions to modify the code to play the stream of your choice:
 STREAMS = [
   {
     "token": '1',
-    "url": 'https://www.radiokrishna.com/RKC-Terni-HQ.m3u',
+    "url": 'https://streaming.broadcast.radio/scratch.m3u',
     "metadata": {
-      "title": 'Dabble Radio',
-      "subtitle": 'A subtitle for dabble radio',
+      "title": 'Scratch Radio',
+      "subtitle": 'From the Heart of BCU, Your University Soundtrack',
       "art": {
         "sources": [
           {
             "contentDescription": 'example image',
-            "url": 'https://s3.amazonaws.com/cdn.dabblelab.com/img/audiostream-starter-512x512.png',
+            "url": 'https://mmo.aiircdn.com/349/64b56a6fc8eeb.png',
             "widthPixels": 512,
             "heightPixels": 512
           }
@@ -56,7 +56,7 @@ STREAMS = [
         "sources": [
           {
             "contentDescription": 'example image',
-            "url": 'https://s3.amazonaws.com/cdn.dabblelab.com/img/wayfarer-on-beach-1200x800.png',
+            "url": 'https://mmo.aiircdn.com/349/654b9faeaee36.jpg',
             "widthPixels": 1200,
             "heightPixels": 800
           }
@@ -96,7 +96,7 @@ class LaunchRequestHandler(AbstractRequestHandler):
     def handle(self,handler_input):
         stream = STREAMS[0]
         return ( handler_input.response_builder
-                    .speak("Starting {}".format(stream["metadata"]["title"]))
+                    .speak("Welcome to {}. {}".format(stream["metadata"]["title"],stream["metadata"]["subtitle"]))
                     .add_directive(
                         PlayDirective(
                             play_behavior=PlayBehavior.REPLACE_ALL,
