@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "dabble radio",
+      "invocationName": "scratch radio",
       "intents": [
         {
           "name": "AMAZON.NavigateHomeIntent",
