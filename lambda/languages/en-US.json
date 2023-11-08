@@ -1,16 +1,16 @@
 {
-    "SKILL_NAME": "the Dabble Lab audio player template",
+    "SKILL_NAME": "the Scratch Radio Alexa skill",
     "ABOUT": [
-        "This is an audio streaming skill that was built with a free template from dabblelab.com. To continue listening say: resume, or say: stop to stop listening."
+        "This skill allows you to listen to Scratch Radio, Birmingham City University's student radio station. To continue listening, say: resume, or say: stop to stop listening."
     ],
     "ABOUT_REPROMPT":[
-        "To continue listening say: resume, or say: stop to stop listening."
+        "To continue listening, say: resume, or say: stop to stop listening."
     ],
     "HELP": [
-        "This skill plays an audio stream when it is started. It does not have any additional functionality."
+        "This skill plays Scratch Radio when it is started. It does not have any additional functionality."
     ],
     "HELP_REPROMPT": [
-        "This skill plays an audio stream when it is started. It does not have any additional functionality."
+        "This skill plays Scratch Radio when it is started. It does not have any additional functionality."
     ],
     "FALLBACK": [
         "Sorry, I didn't understand that. To start the stream say: play."
